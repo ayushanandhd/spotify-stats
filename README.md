@@ -1,9 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Spotify Stats
+
+A clean and modern web application that displays your Spotify listening statistics, including your top artists and tracks.
+
+![Spotify Stats Preview](preview.png)
+
+## Features
+
+- 🎵 View your top 8 most listened to artists
+- 🎸 See your top 8 tracks
+- 🎨 Beautiful minimal design with hover effects
+- 🔐 Secure Spotify authentication
+
+## Tech Stack
+
+- Next.js
+- TailwindCSS
+- Spotify Web API
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/spotify-stats.git
+cd spotify-stats
+```
 
+2. Install the dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+3. Set up your Spotify API credentials:
+
+- Create a new Spotify application at the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
+- Add your redirect URI (e.g., `http://localhost:3000/api/auth/callback/spotify`) to the application's settings.
+- Copy your Client ID and Client Secret.
+
+4. Create a `.env.local` file in the root of the project and add your Spotify credentials:
+```
+SPOTIFY_CLIENT_ID=your_client_id
+SPOTIFY_CLIENT_SECRET=your_client_secret
+SPOTIFY_REDIRECT_URI=http://localhost:3000/api/auth/callback/spotify
+```
+
+5. Run the development server:
 ```bash
 npm run dev
 # or
